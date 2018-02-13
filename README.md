@@ -1,1 +1,1 @@
-# personal
+This is a personal website as a means of showcasing and practicing my coding. It's just a playground for me to practice git with and take a little more risk with than I do the code I'm learning at Tech Elevator.
