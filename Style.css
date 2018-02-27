@@ -1,0 +1,98 @@
+<!--RGB(225, 183, 226); FONTS 'Nixie One', cursive || 'Permanent Marker', cursive || 'Sacramento', cursive -->
+<!--Colors:  #c4b2bc (light purple) #332e3c (jet purple) #846c5b (pale brown) #d8d4f2 (pale lavender)-->
+
+* {
+    font-family: 'Permanent Marker', cursive;
+}
+body {
+    font-size: 1.5em;
+    background-color: RGB(216, 135, 134);
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    height: auto;
+    width: auto;
+}
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #d8d4f2;
+    font-size: 400%;
+    text-align: right;
+    text-align: ;
+    margin-right: 05%;
+}
+h3 {
+    font-family: 'Nixie One', cursive;
+    color: #332e3c;
+}
+ol {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(225, 183, 47);
+    padding: 0;
+}
+.signoff {
+    font-family: 'Nixie One', cursive;
+    color: #332e3c;
+    font-size: .6em;
+    margin: 10px;
+}
+.cards li {
+    /*look*/
+    list-style: none;
+    background-color: white;
+
+    /*sizing*/
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+.cards li:hover {
+    /* My Favorite Part */
+    background-color: lightgray;
+}
+.trellbell-list a {
+    font-family: 'Raleway', sans-serif;
+    color: lightgray;
+    display: block;
+}
+.trellbell-list {
+    border-style: double;
+    border-radius: 2%;
+    padding: 05px;
+    margin: 5px;
+    display: inline-block;
+}
+.grid {
+    display: grid
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.img-medium {
+    width: 20%;
+}
+.img-large {
+    width: 100%;
+}
+#immobile-background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    display: block;
+}
