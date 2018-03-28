@@ -35,6 +35,47 @@ ol {
     color: rgb(225, 183, 47);
     padding: 0;
 }
+/* EXPERIMENTAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.wrapper {
+    margin: auto;
+    display: grid;
+    max-width: 768px;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+        'header header',
+        'contents skills',
+        'footer footer'
+}
+nav#mobile-nav {
+  display: none;
+}
+
+@media (min-width: 479px) {
+  .wrapper {
+      grid-template-columns:1fr;
+      grid-gap: 5px;
+      grid-template-areas:
+          'header'
+          'mobile-nav'
+          'content'
+          'skills'
+          'footer';
+  }
+
+  nav#toc {
+      display: none;
+  }
+
+  nav#mobile-nav {
+      display: initial;
+      grid-area: mobile-nav;
+  }
+}
+/* ////////EXPERIMENTAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 .signoff {
     font-family: 'Nixie One', cursive;
     color: #332e3c;
