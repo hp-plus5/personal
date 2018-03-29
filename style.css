@@ -4,6 +4,7 @@
 * {
     font-family: 'Permanent Marker', cursive;
 }
+
 body {
     font-size: 1.5em;
     background-color: RGB(216, 135, 134);
@@ -16,19 +17,18 @@ body {
 h1 {
     font-family: 'Sacramento', cursive;
     color: white;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 h2 {
     font-family: 'Permanent Marker', cursive;
     color: #d8d4f2;
     font-size: 400%;
     text-align: right;
-    text-align: ;
-    margin-right: 05%;
+    margin-right: 5%;
 }
 h3 {
     font-family: 'Nixie One', cursive;
-    color: #332e3c;
+    color: #c4b2bc;
 }
 ol {
     font-family: 'Raleway', sans-serif;
@@ -41,12 +41,11 @@ ol {
     display: grid;
     max-width: 768px;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
     grid-template-areas:
         'header header',
-        'contents skills',
-        'footer footer'
+        'skills1 skills2'
 }
 nav#mobile-nav {
   display: none;
@@ -60,8 +59,8 @@ nav#mobile-nav {
           'header'
           'mobile-nav'
           'content'
-          'skills'
-          'footer';
+          'skills1'
+          'skill2';
   }
 
   nav#toc {
@@ -75,6 +74,19 @@ nav#mobile-nav {
 }
 /* ////////EXPERIMENTAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+.skills-title {
+    font-family: 'Permanent Marker', cursive;
+    color: #d8d4f2;
+    font-size: 3em;
+    text-align: center;
+    margin-right: 5%;
+}
+.skills1 {
+    display: grid;
+}
+.skills2 {
+    display: grid;
+}
 
 .signoff {
     font-family: 'Nixie One', cursive;
@@ -86,9 +98,12 @@ nav#mobile-nav {
     /*look*/
     list-style: none;
     background-color: white;
+    font-size: .8em;
+    color: #332e3c;
+    border: solid 1px black;
+    width: stretch;
 
     /*sizing*/
-    border: solid 1px black;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px 5px;
@@ -100,30 +115,32 @@ nav#mobile-nav {
 .trellbell-list a {
     font-family: 'Raleway', sans-serif;
     color: lightgray;
-    display: block;
+   /*display: block;*/
 }
 .trellbell-list {
     border-style: double;
     border-radius: 2%;
-    padding: 05px;
+    padding: 5px;
     margin: 5px;
-    display: inline-block;
+    width: 50%;
+    /*display: inline-block;*/
 }
 .grid {
     display: grid
 }
-.center-block {
+/* .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
+ } */
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .img-medium {
     width: 20%;
+    padding: 50px;
 }
 .img-large {
     width: 100%;
